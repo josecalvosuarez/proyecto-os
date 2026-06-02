@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Vagrant
+.vagrant/
+
+# VirtualBox
+*.vbox
+*.vdi
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Solutions — commit only on 'solutions' branch
+SOLUTIONS.md
