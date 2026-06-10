@@ -55,7 +55,7 @@ Instala los siguientes programas en tu máquina Windows antes de empezar:
 Abre **PowerShell** o **Git Bash** y ejecuta:
 
 ```powershell
-git clone https://github.com/TU_USUARIO/os-troubleshooting-lab.git
+git clone https://github.com/josecalvosuarez/proyecto-os
 cd os-troubleshooting-lab
 ```
 
