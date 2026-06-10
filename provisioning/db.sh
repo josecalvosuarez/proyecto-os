@@ -9,6 +9,10 @@ echo "==> Configuring PostgreSQL..."
 PG_CONF="/etc/postgresql/14/main/postgresql.conf"
 PG_HBA="/etc/postgresql/14/main/pg_hba.conf"
 
+# Listen address
+sed -i "s/^#listen_addresses = .*/listen_addresses = '*'/" $PG_CONF
+sed -i "s/^listen_addresses = .*/listen_addresses = '*'/" $PG_CONF
+
 # NOTE: max_connections is intentionally set to 5.
 # With 3+ workers each opening their own connection, the pool
 # exhausts quickly under load. A healthy value is 100+.
